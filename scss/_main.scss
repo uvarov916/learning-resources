@@ -1,0 +1,9 @@
+@import "variables";
+@import "mixins";
+
+#website-body {
+  @import "global";
+  @import "header";
+  @import "body";
+  @import "footer";
+}
