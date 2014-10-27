@@ -1,0 +1,14 @@
+footer {
+  padding: 3rem 0;
+
+  background-image: url('../img/footer-background.png');
+  background-size: cover;
+
+  h4 {
+    color: $white-font-color;
+  }
+
+  a {
+    color: $light-blue-link-color;
+  }
+}

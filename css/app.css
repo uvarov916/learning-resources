@@ -5892,6 +5892,8 @@ th.hide-for-touch {
   font-size: 1.563em; }
 #website-body h4 {
   font-size: 1.25em; }
+#website-body a {
+  color: #2A9CB4; }
 #website-body header {
   padding: 10rem 0;
   background-image: url('../img/header-background.png');
@@ -5900,4 +5902,20 @@ th.hide-for-touch {
     text-align: center;
     color: white; }
   #website-body header a {
+    color: #59D6F1; }
+#website-body .content-section {
+  padding: 3em 0; }
+  #website-body .content-section .section-title {
+    margin-bottom: 1em; }
+  #website-body .content-section .item .description {
+    font-size: 0.9em; }
+#website-body #top-picks {
+  background-color: #FAFEFF; }
+#website-body footer {
+  padding: 3rem 0;
+  background-image: url('../img/footer-background.png');
+  background-size: cover; }
+  #website-body footer h4 {
+    color: white; }
+  #website-body footer a {
     color: #59D6F1; }
