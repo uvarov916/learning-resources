@@ -5883,7 +5883,10 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 #website-body * {
-  font-family: "Avenir Next"; }
+  font-family: "Avenir Next";
+  color: #676767; }
+#website-body h1, #website-body h2, #website-body h3, #website-body h4 {
+  color: #3F3F3F; }
 #website-body h1 {
   font-size: 2.441em; }
 #website-body h2 {
