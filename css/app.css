@@ -5907,9 +5907,9 @@ th.hide-for-touch {
   #website-body header a {
     color: #59D6F1; }
 #website-body .content-section {
-  padding: 3em 0; }
+  padding: 3em 0 1em; }
   #website-body .content-section .section-title {
-    margin-bottom: 1em; }
+    margin-bottom: 1.3em; }
   #website-body .content-section .item .description {
     font-size: 0.9em; }
 #website-body #top-picks {

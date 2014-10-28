@@ -8,3 +8,5 @@ To implement:
 - [ ] Web development learning guide
 - [ ] Learning FAQ (maybe)
 - [ ] Submit new resource
+- [ ] Added share icons
+- [ ] Open Graph API for Facebook and other social media sharing
