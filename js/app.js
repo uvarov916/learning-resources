@@ -21,84 +21,40 @@
    };
   });
 
-  app.controller('ResourcesController', function() {
+  app.controller('ResourcesController', function($scope, $http) {
     this.generalInfo = generalInfo;
-    this.featuredResources = featuredResources;
-    this.allResources = allResources;
     this.categories = categories;
+    this.featuredResources = featuredResources;                
+    this.allResources = allResources;
+
   });
 
   var generalInfo = {
-    header_title: "Collection of web development and design resources",
+    header_title: "The best resources for learning Web Development, Design, and iOS",
     twitter_link: "http://twitter.com/uvarovdd"
   };
 
   var categories = [
     "Web Development",
-    "Web Design",
+    "Design",
+    "Inspiration",
     "iOS",
     "Typography",
+    "Colors",
+    "Sketch",
+    "Xcode",
+    "Front End",
+    "Back End",
+    "Ruby",
+    "Ruby on Rails",
     "Education",
     "Tools",
+    "Apps",
+    "Productivity",
+    "Startups",
     "Articles",
     "Books"
   ];
 
-  var featuredResources = [
-    {
-      name: "Treehouse",
-      link: "http://referrals.trhou.se/ivanuvarov",
-      description: "One of the best website providing interactive courses helping to learn how to build websites & apps, write code or start a business.",
-    },
-    {
-      name: "Sketch 3",
-      link: "http://bohemiancoding.com/sketch/",
-      description: "Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design.",
-    },
-    {
-      name: "Designer News",
-      link: "https://news.layervault.com",
-      description: "Designer News is a community where design and technology professionals share interesting links and timely events.",
-    },
-    {
-      name: "Hacker News",
-      link: "https://news.ycombinator.com",
-      description: "Hacker News is a social news website that caters to programmers and entrepreneurs, delivering content related to computer science and entrepreneurship. It is run by Paul Graham's investment fund and startup incubator, Y Combinator.",
-    },
-    {
-      name: "Oozled",
-      link: "http://oozled.com",
-      description: "Amazing website with curated resources for everything creative. It contains over 780 resources that you might find helpful for your future design projects."
-    }
-  ];
-
-  var allResources = [
-    {
-      name: "Treehouse",
-      link: "http://referrals.trhou.se/ivanuvarov",
-      description: "One of the best website providing interactive courses helping to learn how to build websites & apps, write code or start a business.",
-      tags: ["iOS", "Android", "Web Development", "Web Design", "Typography", "Education"]
-    },
-    {
-      name: "Sketch 3",
-      link: "http://bohemiancoding.com/sketch/",
-      description: "Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design.",
-    },
-    {
-      name: "Designer News",
-      link: "https://news.layervault.com",
-      description: "Designer News is a community where design and technology professionals share interesting links and timely events.",
-    },
-    {
-      name: "Hacker News",
-      link: "https://news.ycombinator.com",
-      description: "Hacker News is a social news website that caters to programmers and entrepreneurs, delivering content related to computer science and entrepreneurship. It is run by Paul Graham's investment fund and startup incubator, Y Combinator.",
-    },
-    {
-      name: "Oozled",
-      link: "http://oozled.com",
-      description: "Amazing website with curated resources for everything creative. It contains over 780 resources that you might find helpful for your future design projects."
-    }
-  ];
 
 })();
