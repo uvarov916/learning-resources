@@ -5883,7 +5883,8 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 #website-body * {
-  font-family: "Avenir Next";
+  font-family: "Roboto", "Avenir Next", Arial, sans-serif;
+  font-weight: 300;
   color: #676767; }
 #website-body h1, #website-body h2, #website-body h3, #website-body h4 {
   color: #3F3F3F; }
@@ -5904,7 +5905,7 @@ th.hide-for-touch {
 #website-body header .overlay {
   height: 100%;
   width: 100%;
-  padding: 15vw 0;
+  padding: 12vw 0;
   background-color: rgba(0, 0, 0, 0.7); }
   #website-body header .overlay h1, #website-body header .overlay h4 {
     text-align: center;
@@ -5914,7 +5915,7 @@ th.hide-for-touch {
 #website-body #content {
   z-index: 5; }
 #website-body .content-section {
-  padding: 3em 0 1em; }
+  padding: 4em 0 3em; }
   #website-body .content-section .section-title {
     margin-bottom: 1.3em; }
   #website-body .content-section .item .description {
