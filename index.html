@@ -50,16 +50,22 @@
         </div></div>
       </section>
 
-      <section class="content-section">
-        <div class="filters">
-          <div class="row">
-            <div class="search-box small-12 medium-3 large-3 columns">
-              <input type="text" ng-model="searchRes">
-              <input type="checkbox" data-ng-model='search.tag1' data-ng-true-value='sketch' data-ng-false-value='' />Sketch
-        <input type="checkbox" data-ng-model='search.tag2' data-ng-true-value='design' data-ng-false-value='' />Design
-            </div>
+      <section class="filters">
+        <div class="row">
+          <div class="columns small-12">
+            <h2 class="section-title">All Resources</h2>
           </div>
         </div>
+        <div class="row">
+          <div class="search-box small-12 medium-3 large-3 columns">
+            <!-- <input type="text" ng-model="searchRes"> -->
+            <div class="tag-button"><label><input type="checkbox" value="0" data-ng-model='search.tag1' data-ng-true-value='sketch' data-ng-false-value='' /><span>Sketch</span></label></div>
+            <div class="tag-button"><label><input type="checkbox" value="0" data-ng-model='search.tag2' data-ng-true-value='design' data-ng-false-value=''/><span>Design</span></label></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section">
         <div class="row"><div class="small-12 columns">
           <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 

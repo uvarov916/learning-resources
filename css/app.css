@@ -5916,6 +5916,29 @@ th.hide-for-touch {
     font-size: 0.9em; }
 #website-body #top-picks {
   background-color: #FAFEFF; }
+#website-body .filters {
+  background-color: #003946;
+  color: white;
+  padding: 3em 0 3.5em; }
+  #website-body .filters .section-title {
+    color: white;
+    margin-bottom: 1em; }
+  #website-body .filters .tag-button {
+    display: inline-block;
+    margin-right: 1em; }
+    #website-body .filters .tag-button label span {
+      display: block;
+      text-align: center;
+      font-size: 1rem;
+      padding: 0.3em 1.2em;
+      border-radius: 2px;
+      background-color: white;
+      color: #2A9CB4; }
+    #website-body .filters .tag-button label input {
+      display: none; }
+    #website-body .filters .tag-button input:checked + span {
+      background-color: #FF6961;
+      color: white; }
 #website-body footer {
   padding: 3rem 0;
   background-image: url('../img/footer-background.png');
