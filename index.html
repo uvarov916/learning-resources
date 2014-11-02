@@ -63,7 +63,7 @@
         <div class="row"><div class="small-12 columns">
           <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 
-            <li class="item wow fadeInUp" data-wow-duration=".4s" ng-repeat="item in resources.allResources | filter:searchRes | filter:search.tag1 | filter:search.tag2">
+            <li class="item wow fadeInUp" data-wow-duration=".4s" ng-repeat="item in resources.allResources | search:searchRes | filter:search.tag1 | filter:search.tag2">
               <h4 class="name"><a href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
               <p class="description">{{ item.description }}</p>
             </li>
