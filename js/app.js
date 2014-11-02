@@ -30,42 +30,18 @@
 
   var generalInfo = {
     header_title: "Collection of web development and design resources",
-    twitter_link: "http://twitter.com/fatherussia"
+    twitter_link: "http://twitter.com/uvarovdd"
   };
 
   var categories = [
-    {
-      name: "Web Development",
-      index: 1
-    },
-    {
-      name: "Web Design",
-      index: 2
-    },
-    {
-      name: "iOS",
-      index: 3
-    },
-    {
-      name: "Typography",
-      index: 4
-    },
-    {
-      name: "Education",
-      index: 5
-    },
-    {
-      name: "Tools",
-      index: 6
-    },
-    {
-      name: "Articles",
-      index: 7
-    },
-    {
-      name: "Books",
-      index: 7
-    }
+    "Web Development",
+    "Web Design",
+    "iOS",
+    "Typography",
+    "Education",
+    "Tools",
+    "Articles",
+    "Books"
   ];
 
   var featuredResources = [
@@ -101,6 +77,7 @@
       name: "Treehouse",
       link: "http://referrals.trhou.se/ivanuvarov",
       description: "One of the best website providing interactive courses helping to learn how to build websites & apps, write code or start a business.",
+      tags: ["iOS", "Android", "Web Development", "Web Design", "Typography", "Education"]
     },
     {
       name: "Sketch 3",

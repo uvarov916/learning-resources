@@ -23,7 +23,7 @@
       <div class="row">
         <div class="columns small-12 medium-8 small-centered">
           <h1 class="animated fadeInUpBig">{{ resources.generalInfo.header_title }}</h1>
-          <h4 class="animated fadeInUpBig">by <a href="{{ resources.generalInfo.twitter_link }}">Ivan Uvarov</a></h4>
+          <h4 class="animated fadeInUpBig">by <a class="white-underline-hover" href="{{ resources.generalInfo.twitter_link }}">Ivan Uvarov</a></h4>
         </div>
       </div>
 
@@ -45,7 +45,7 @@
         <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
 
           <li class="item" ng-repeat="item in resources.featuredResources">
-            <h4 class="name"><a href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
+            <h4 class="name"><a class="red-hover" href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
             <p class="description">{{ item.description }}</p>
           </li>
           
@@ -67,11 +67,44 @@
             <!-- <input type="text" ng-model="searchRes"> -->
 
 
-            <div class="tag-button" ng-repeat="item in resources.categories">
+            <div class="tag-button">
               <label>
-
-                <input type="checkbox" value="0" data-ng-model="search.tag1" data-ng-true-value="{{item.name}}" data-ng-false-value='' /><span>{{ item.name }}</span>
-
+                <input type="checkbox" value="0" data-ng-model="search.tag1" data-ng-true-value="{{resources.categories[0]}}" data-ng-false-value='' /><span>{{ resources.categories[0] }}</span>
+              </label>
+            </div>
+            <div class="tag-button">
+              <label>
+                <input type="checkbox" value="0" data-ng-model="search.tag2" data-ng-true-value="{{resources.categories[1]}}" data-ng-false-value='' /><span>{{ resources.categories[1] }}</span>
+              </label>
+            </div>
+            <div class="tag-button">
+              <label>
+                <input type="checkbox" value="0" data-ng-model="search.tag3" data-ng-true-value="{{resources.categories[2]}}" data-ng-false-value='' /><span>{{ resources.categories[2] }}</span>
+              </label>
+            </div>
+            <div class="tag-button">
+              <label>
+                <input type="checkbox" value="0" data-ng-model="search.tag4" data-ng-true-value="{{resources.categories[3]}}" data-ng-false-value='' /><span>{{ resources.categories[3] }}</span>
+              </label>
+            </div>
+            <div class="tag-button">
+              <label>
+                <input type="checkbox" value="0" data-ng-model="search.tag5" data-ng-true-value="{{resources.categories[4]}}" data-ng-false-value='' /><span>{{ resources.categories[4] }}</span>
+              </label>
+            </div>
+            <div class="tag-button">
+              <label>
+                <input type="checkbox" value="0" data-ng-model="search.tag6" data-ng-true-value="{{resources.categories[5]}}" data-ng-false-value='' /><span>{{ resources.categories[5] }}</span>
+              </label>
+            </div>
+            <div class="tag-button">
+              <label>
+                <input type="checkbox" value="0" data-ng-model="search.tag7" data-ng-true-value="{{resources.categories[6]}}" data-ng-false-value='' /><span>{{ resources.categories[6] }}</span>
+              </label>
+            </div>
+            <div class="tag-button">
+              <label>
+                <input type="checkbox" value="0" data-ng-model="search.tag8" data-ng-true-value="{{resources.categories[7]}}" data-ng-false-value='' /><span>{{ resources.categories[7] }}</span>
               </label>
             </div>
           </div>
@@ -83,8 +116,8 @@
         <div class="row"><div class="small-12 columns">
           <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 
-            <li class="item wow fadeIn" data-wow-duration=".4s" ng-repeat="item in resources.allResources | search:searchRes | filter:search.tag1 | filter:search.tag2">
-              <h4 class="name"><a href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
+            <li class="item wow fadeIn" data-wow-duration=".4s" ng-repeat="item in resources.allResources | search:searchRes | filter:search.tag1 | filter:search.tag2 | filter:search.tag3 | filter:search.tag4 | filter:search.tag5 | filter:search.tag6 | filter:search.tag7 | filter:search.tag8 | filter:search.tag9 | filter:search.tag10 | filter:search.tag11 | filter:search.tag12 | filter:search.tag13 | filter:search.tag14 | filter:search.tag15 | filter:search.tag16 | filter:search.tag17 | filter:search.tag18">
+              <h4 class="name"><a class="red-hover" href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
               <p class="description">{{ item.description }}</p>
             </li>
             
@@ -96,7 +129,9 @@
     </div>
 
     <footer>
+      
       <div class="twitter-circle">
+        <a href="https://twitter.com/home?status=The%20best%20resources%20for%20learning%20design%20and%20development%20via%20@uvarovdd:%20http://uvarovis.com/ddres" target="_blank">
         <div class="wrapper">
         
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.002 16" enable-background="new 0 0 16.002 16" xml:space="preserve">
@@ -111,14 +146,14 @@
 
 
         </div>
+        </a>
       </div>
 
 
 
       <div class="row">
         <div class="columns small-12">
-          <h4>Created and curated by <a href="{{ resources.generalInfo.twitter_link }}">Ivan Uvarov</a></h4>
-          <h4>Inspired by <a href="http://designcode.io/learn">Meng To</a></h4>
+          <h4 class="text-center">Created and curated by <a class="white-underline-hover" href="{{ resources.generalInfo.twitter_link }}">Ivan Uvarov</a>, <a class="white-underline-hover" href="mailto:tonk2012@gmail.com">Email</a></h4>
         </div>
       </div>
     </footer>
