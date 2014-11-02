@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="ddRes">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +13,7 @@
     </script>
 
     <script src="bower_components/modernizr/modernizr.js"></script>
+
   </head>
   <body id="website-body">
     
@@ -29,7 +30,7 @@
       </div>
     </header>
 
-    <div id="content">
+    <div id="content" ng-controller="ResourcesController as resources">
       <section id="top-picks" class="content-section wow fadeIn" data-wow-duration="1s">
         <div class="row">
           <div class="columns small-12">
@@ -39,116 +40,43 @@
         <div class="row"><div class="small-12 columns">
           <ul class="small-block-grid-1 medium-block-grid-3">
             <li class="item">
-              <h4 class="name"><a href="#">Sketch 3</a></h4>
-              <p class="description">Sketch is a modern, lightweight and powerful tool for designers. There is no equal when it comes to quickly designing multiple screens, preview on your iPhone and export assets. And it's simple enough for anyone who's never done design.</p>
+              <h4 class="name"><a target="_blank" href="http://bohemiancoding.com/sketch/">Sketch 3</a></h4>
+              <p class="description">Add description here.</p>
             </li>
 
             <li class="item">
-              <h4 class="name"><a href="#">Sketch for Beginners: Design a Login Form Interface </a></h4>
-              <p class="description">A very detailed tutorial on how to design a login screen in Sketch. Great for beginners.</p>
+              <h4 class="name"><a target="_blank" href="http://referrals.trhou.se/ivanuvarov">Treehouse</a></h4>
+              <p class="description">One of the best websites out there to learn everything web development related: UI/UX Design, HTML/CSS, Wordpress, PHP, Ruby, etc.</p>
             </li>
 
             <li class="item">
-              <h4 class="name"><a href="#">Why I moved to Sketch</a></h4>
-              <p class="description">One of my most popular Sketch posts from 2 years ago was about switching from PS to Sketch. Today, Sketch is used by a ton of designers. In the same veins, this posts explains the why and the how.</p>
+              <h4 class="name"><a target="_blank" href="https://news.layervault.com">Designer News</a></h4>
+              <p class="description">Add description here.</p>
             </li>
+
           </ul>
 
         </div></div>
       </section>
 
       <section class="content-section">
-        <div class="row">
+<!--         <div class="row" >
           <div class="columns small-12">
             <h2 class="section-title">UI Design</h2>
           </div>
-        </div>
+        </div> -->
         <div class="row"><div class="small-12 columns">
         <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Sketch 3</a></h4>
-            <p class="description">Sketch is a modern, lightweight and powerful tool for designers. There is no equal when it comes to quickly designing multiple screens, preview on your iPhone and export assets. And it's simple enough for anyone who's never done design.</p>
+          <li class="item wow fadeInUp" data-wow-duration=".4s" ng-repeat="item in resources.items">
+            <h4 class="name"><a href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
+            <p class="description">{{ item.description }}</p>
           </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Sketch for Beginners: Design a Login Form Interface </a></h4>
-            <p class="description">A very detailed tutorial on how to design a login screen in Sketch. Great for beginnery detailed tutorial on how to design a login screen in Sketch. Great for beginnery detailed tutorial on how to design a login screen in Sketch. Great for beginners.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Why I moved to Sketch</a></h4>
-            <p class="description">One of my most popular Sketch posts from 2 years ago was about switching from PS to Sketch. Today, Sketch is used by a ton of designers. In the same veins, this posts explains the why and the how.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Sketch 3</a></h4>
-            <p class="description">Sketch is a modern, lightweight and powerful tool for designers. There is no equal when it comes to quickly designing multiple screens, preview on your iPhone and export assets. And it's simple enough for anyone who's never done design.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Sketch for Beginners: Design a Login Form Interface </a></h4>
-            <p class="description">A very detailed tutorial on how to design a login screen in Sketch. Great for beginnery detailed tutorial on how to design a login screen in Sketch. Great for beginnery detailed tutorial on how to design a login screen in Sketch. Great for beginners.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Why I moved to Sketch</a></h4>
-            <p class="description">One of my most popular Sketch posts from 2 years ago was about switching from PS to Sketch. Today, Sketch is used by a ton of designers. In the same veins, this posts explains the why and the how.</p>
-          </li>
-
           
         </ul>
         </div></div>
       </section>
 
-      <section class="content-section">
-        <div class="row">
-          <div class="columns small-12">
-            <h2 class="section-title">Web Development</h2>
-          </div>
-        </div>
-        <div class="row"><div class="small-12 columns">
-        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Sketch 3</a></h4>
-            <p class="description">Sketch is a modern, lightweight and powerful tool for designers. There is no equal when it comes to quickly designing multiple screens, preview on your iPhone and export assets. And it's simple enough for anyone who's never done design.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Sketch for Beginners: Design a Login Form Interface </a></h4>
-            <p class="description">A very detailed tutorial on how to design a login screen in Sketch. Great for beginnery detailed tutorial on how to design a login screen in Sketch. Great for beginnery detailed tutorial on how to design a login screen in Sketch. Great for beginners.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Why I moved to Sketch</a></h4>
-            <p class="description">One of my most popular Sketch posts from 2 years ago was about switching from PS to Sketch. Today, Sketch is used by a ton of designers. In the same veins, this posts explains the why and the how.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Sketch 3</a></h4>
-            <p class="description">Sketch is a modern, lightweight and powerful tool for designers. There is no equal when it comes to quickly designing multiple screens, preview on your iPhone and export assets. And it's simple enough for anyone who's never done design.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Sketch for Beginners: Design a Login Form Interface </a></h4>
-            <p class="description">A very detailed tutorial on how to design a login screen in Sketch. Great for beginnery detailed tutorial on how to design a login screen in Sketch. Great for beginnery detailed tutorial on how to design a login screen in Sketch. Great for beginners.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Why I moved to Sketch</a></h4>
-            <p class="description">One of my most popular Sketch posts from 2 years ago was about switching from PS to Sketch. Today, Sketch is used by a ton of designers. In the same veins, this posts explains the why and the how.</p>
-          </li>
-
-          <li class="item wow fadeInUp" data-wow-duration=".4s">
-            <h4 class="name"><a href="#">Why I moved to Sketch</a></h4>
-            <p class="description">One of my most popular Sketch posts from 2 years ago was about switching from PS to Sketch. Today, Sketch is used by a ton of designers. In the same veins, this posts explains the why and the how.</p>
-          </li>
-
-          
-        </ul>
-        </div></div>
-      </section>
 
     </div>
 
@@ -161,6 +89,7 @@
       </div>
     </footer>
 
+    <script src="js/min/angular-min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>

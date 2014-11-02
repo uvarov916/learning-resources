@@ -5906,6 +5906,8 @@ th.hide-for-touch {
     color: white; }
   #website-body header a {
     color: #59D6F1; }
+#website-body #content {
+  z-index: 5; }
 #website-body .content-section {
   padding: 3em 0 1em; }
   #website-body .content-section .section-title {
