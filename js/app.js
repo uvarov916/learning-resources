@@ -18,7 +18,7 @@
     {
       name: "Sketch 3",
       link: "http://bohemiancoding.com/sketch/",
-      description: "Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design."
+      description: "Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design.",
     }
   ];
 
@@ -26,7 +26,8 @@
     {
       name: "Sketch 3",
       link: "http://bohemiancoding.com/sketch/",
-      description: "Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design."
+      description: "Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on what you do best: Design.",
+      tags: ["bullshit"]
     },
     {
       name: "SketchCasts",
