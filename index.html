@@ -31,6 +31,7 @@
     </header>
 
     <div id="content">
+      
       <section id="top-picks" class="content-section wow fadeIn" data-wow-duration="1s">
         <div class="row">
           <div class="columns small-12">
@@ -38,7 +39,7 @@
           </div>
         </div>
         <div class="row"><div class="small-12 columns">
-        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3">
 
           <li class="item wow fadeInUp" data-wow-duration=".4s" ng-repeat="item in resources.featuredResources">
             <h4 class="name"><a href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
@@ -50,20 +51,22 @@
       </section>
 
       <section class="content-section">
-<!--         <div class="row" >
-          <div class="columns small-12">
-            <h2 class="section-title">UI Design</h2>
+        <div class="filters">
+          <div class="row">
+            <div class="search-box small-12 medium-3 large-3 columns">
+              <input type="text" ng-model="searchRes">
+            </div>
           </div>
-        </div> -->
+        </div>
         <div class="row"><div class="small-12 columns">
-        <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
+          <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 
-          <li class="item wow fadeInUp" data-wow-duration=".4s" ng-repeat="item in resources.allResources">
-            <h4 class="name"><a href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
-            <p class="description">{{ item.description }}</p>
-          </li>
-          
-        </ul>
+            <li class="item wow fadeInUp" data-wow-duration=".4s" ng-repeat="item in resources.allResources | filter:searchRes">
+              <h4 class="name"><a href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
+              <p class="description">{{ item.description }}</p>
+            </li>
+            
+          </ul>
         </div></div>
       </section>
 
