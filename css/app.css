@@ -5898,13 +5898,17 @@ th.hide-for-touch {
 #website-body a {
   color: #2A9CB4; }
 #website-body header {
-  padding: 15vw 0;
-  background-image: url('../img/header-background.png');
+  background-image: url('../img/26.jpg');
   background-size: cover; }
-  #website-body header h1, #website-body header h4 {
+#website-body header .overlay {
+  height: 100%;
+  width: 100%;
+  padding: 15vw 0;
+  background-color: rgba(0, 0, 0, 0.7); }
+  #website-body header .overlay h1, #website-body header .overlay h4 {
     text-align: center;
     color: white; }
-  #website-body header a {
+  #website-body header .overlay a {
     color: #59D6F1; }
 #website-body #content {
   z-index: 5; }
@@ -5917,9 +5921,14 @@ th.hide-for-touch {
 #website-body #top-picks {
   background-color: #FAFEFF; }
 #website-body .filters {
-  background-color: #003946;
-  color: white;
-  padding: 3em 0 3.5em; }
+  position: relative;
+  background-image: url('../img/pattern.png');
+  color: white; }
+  #website-body .filters .overlay {
+    width: 100%;
+    height: 100%;
+    padding: 3em 0 3.5em;
+    background-color: rgba(0, 0, 0, 0.7); }
   #website-body .filters .section-title {
     color: white;
     margin-bottom: 1em; }
