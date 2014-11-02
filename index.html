@@ -52,6 +52,8 @@
         </div></div>
       </section>
 
+      <section class="split-image"></section>
+
       <section class="filters">
         <div class="overlay">
         <div class="row">
@@ -60,10 +62,17 @@
           </div>
         </div>
         <div class="row">
-          <div class="search-box small-12 medium-3 large-3 columns">
+          <div class="small-12 columns">
             <!-- <input type="text" ng-model="searchRes"> -->
-            <div class="tag-button"><label><input type="checkbox" value="0" data-ng-model='search.tag1' data-ng-true-value='sketch' data-ng-false-value='' /><span>Sketch</span></label></div>
-            <div class="tag-button"><label><input type="checkbox" value="0" data-ng-model='search.tag2' data-ng-true-value='design' data-ng-false-value=''/><span>Design</span></label></div>
+
+
+            <div class="tag-button" ng-repeat="item in resources.categories">
+              <label>
+
+                <input type="checkbox" value="0" data-ng-model="search.tag1" data-ng-true-value="{{item.name}}" data-ng-false-value='' /><span>{{ item.name }}</span>
+
+              </label>
+            </div>
           </div>
         </div>
         </div>

@@ -5890,7 +5890,8 @@ th.hide-for-touch {
 #website-body h1 {
   font-size: 2.441em; }
 #website-body h2 {
-  font-size: 1.953em; }
+  font-size: 1.953em;
+  text-transform: uppercase; }
 #website-body h3 {
   font-size: 1.563em; }
 #website-body h4 {
@@ -5918,8 +5919,6 @@ th.hide-for-touch {
     margin-bottom: 1.3em; }
   #website-body .content-section .item .description {
     font-size: 0.9em; }
-#website-body #top-picks {
-  background-color: #FAFEFF; }
 #website-body .filters {
   position: relative;
   background-image: url('../img/pattern.png');
@@ -5927,31 +5926,38 @@ th.hide-for-touch {
   #website-body .filters .overlay {
     width: 100%;
     height: 100%;
-    padding: 3em 0 3.5em;
+    padding: 3em 0 2.5em;
     background-color: rgba(0, 0, 0, 0.7); }
   #website-body .filters .section-title {
     color: white;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    margin-top: 3em; }
   #website-body .filters .tag-button {
     display: inline-block;
-    margin-right: 1em; }
+    margin-right: 1em;
+    margin-bottom: 1em; }
+    #website-body .filters .tag-button:hover label span {
+      background-color: white;
+      color: #2A9CB4; }
     #website-body .filters .tag-button label span {
       display: block;
       text-align: center;
       font-size: 1rem;
       padding: 0.3em 1.2em;
       border-radius: 2px;
-      background-color: white;
-      color: #2A9CB4; }
+      border: 1px solid white;
+      color: white;
+      transition: ease-in-out 0.3s; }
     #website-body .filters .tag-button label input {
       display: none; }
     #website-body .filters .tag-button input:checked + span {
       background-color: #FF6961;
-      color: white; }
+      color: white;
+      border-color: #FF6961;
+      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 #website-body footer {
   padding: 3rem 0;
-  background-image: url('../img/footer-background.png');
-  background-size: cover; }
+  background-image: url('../img/footer.gif'); }
   #website-body footer h4 {
     color: white; }
   #website-body footer a {

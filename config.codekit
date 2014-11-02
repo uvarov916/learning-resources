@@ -3629,6 +3629,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/26.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.63464e+06,
+		"inputAbbreviatedPath": "\/img\/26.jpg",
+		"outputAbbreviatedPath": "\/img\/26.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/footer-background.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -3655,7 +3666,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 38405,
+		"initialSize": 16458,
 		"inputAbbreviatedPath": "\/img\/pattern.png",
 		"outputAbbreviatedPath": "\/img\/pattern.png",
 		"outputPathIsOutsideProject": 0,

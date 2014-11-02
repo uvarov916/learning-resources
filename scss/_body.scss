@@ -18,16 +18,16 @@
 }
 
 #top-picks {
-  background-color: #FAFEFF;
+  //background-color: #FAFEFF;
+  
 }
-
 
 .filters {
 
   .overlay {
     width: 100%;
     height: 100%;
-    padding: 3em 0 3.5em;
+    padding: 3em 0 2.5em;
     // background-color: rgba(0, 57, 70, .98);
     background-color: rgba(0, 0, 0, .7);
   }
@@ -35,6 +35,7 @@
   .section-title {
     color: white;
     margin-bottom: 1em;
+    margin-top: 3em;
   }
 
   position: relative;
@@ -47,9 +48,12 @@
     
     display: inline-block;
     margin-right: 1em;
+    margin-bottom: 1em;
 
-    &:hover {
+    &:hover label span {
       // hover styles
+      background-color: white;
+      color: $dark-blue-font-color;
     }
 
     label span {
@@ -58,8 +62,11 @@
       font-size: 1rem;
       padding: .3em 1.2em;
       border-radius: 2px;
-      background-color: white;
-      color: $dark-blue-font-color;
+      //background-color: white;
+      //color: $dark-blue-font-color;
+      border: 1px solid white;
+      color: white;
+      transition: ease-in-out .3s;
     }
 
     label input {
@@ -69,6 +76,8 @@
     input:checked + span{
       background-color: $light-red-background-color;
       color: white;
+      border-color: $light-red-background-color;
+      box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
     }
   }
 
