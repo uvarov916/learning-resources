@@ -35,25 +35,23 @@
   };
 
   var categories = [
-    "Web Development",
-    "Design",
-    "Inspiration",
+    "Web",
     "iOS",
-    "Typography",
-    "Colors",
+    "Design",
+    "Code",
+    "Inspiration",
+    "Learning",
     "Sketch",
-    "Xcode",
+    "Typography",
     "Front End",
     "Back End",
     "Ruby",
     "Ruby on Rails",
-    "Education",
     "Tools",
-    "Apps",
-    "Productivity",
-    "Startups",
-    "Articles",
-    "Books"
+    //"Startups",
+    //"Articles",
+    //"Books",
+    //"Videos"
   ];
 
 

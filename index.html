@@ -6,7 +6,7 @@
     <title>The best resources for learning Web Development, Design, and iOS.</title>
     <link rel="stylesheet" href="css/app.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-
+    
     <script type="text/javascript" src="js/data.js"></script>
 
     <link rel="stylesheet" href="css/animate.css">
@@ -79,6 +79,9 @@
                 <input type="checkbox" value="0" data-ng-model="search.tag2" data-ng-true-value="{{resources.categories[1]}}" data-ng-false-value='' /><span>{{ resources.categories[1] }}</span>
               </label>
             </div>
+
+            <br>
+
             <div class="tag-button">
               <label>
                 <input type="checkbox" value="0" data-ng-model="search.tag3" data-ng-true-value="{{resources.categories[2]}}" data-ng-false-value='' /><span>{{ resources.categories[2] }}</span>
@@ -99,6 +102,9 @@
                 <input type="checkbox" value="0" data-ng-model="search.tag6" data-ng-true-value="{{resources.categories[5]}}" data-ng-false-value='' /><span>{{ resources.categories[5] }}</span>
               </label>
             </div>
+
+            <br>
+
             <div class="tag-button">
               <label>
                 <input type="checkbox" value="0" data-ng-model="search.tag7" data-ng-true-value="{{resources.categories[6]}}" data-ng-false-value='' /><span>{{ resources.categories[6] }}</span>
@@ -134,6 +140,9 @@
                 <input type="checkbox" value="0" data-ng-model="search.tag8" data-ng-true-value="{{resources.categories[12]}}" data-ng-false-value='' /><span>{{ resources.categories[12] }}</span>
               </label>
             </div>
+
+            <!--
+
             <div class="tag-button">
               <label>
                 <input type="checkbox" value="0" data-ng-model="search.tag8" data-ng-true-value="{{resources.categories[13]}}" data-ng-false-value='' /><span>{{ resources.categories[13] }}</span>
@@ -159,6 +168,9 @@
                 <input type="checkbox" value="0" data-ng-model="search.tag8" data-ng-true-value="{{resources.categories[17]}}" data-ng-false-value='' /><span>{{ resources.categories[17] }}</span>
               </label>
             </div>
+
+            -->
+
           </div>
         </div>
         </div>
@@ -168,7 +180,7 @@
         <div class="row"><div class="small-12 columns">
           <ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-4">
 
-            <li class="item wow fadeIn" data-wow-duration=".4s" ng-repeat="item in resources.allResources | search:searchRes | filter:search.tag1 | filter:search.tag2 | filter:search.tag3 | filter:search.tag4 | filter:search.tag5 | filter:search.tag6 | filter:search.tag7 | filter:search.tag8 | filter:search.tag9 | filter:search.tag10 | filter:search.tag11 | filter:search.tag12 | filter:search.tag13 | filter:search.tag14 | filter:search.tag15 | filter:search.tag16 | filter:search.tag17 | filter:search.tag18">
+            <li class="item" data-wow-duration=".4s" ng-repeat="item in resources.allResources | search:searchRes | filter:search.tag1 | filter:search.tag2 | filter:search.tag3 | filter:search.tag4 | filter:search.tag5 | filter:search.tag6 | filter:search.tag7 | filter:search.tag8 | filter:search.tag9 | filter:search.tag10 | filter:search.tag11 | filter:search.tag12 | filter:search.tag13 | filter:search.tag14 | filter:search.tag15 | filter:search.tag16 | filter:search.tag17 | filter:search.tag18 | orderBy:'name'">
               <h4 class="name"><a class="red-hover" href="{{ item.link }}" target="_blank">{{ item.name }}</a></h4>
               <p class="description">{{ item.description }}</p>
             </li>
