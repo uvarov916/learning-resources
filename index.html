@@ -3,19 +3,61 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+
+
+    <!-- Update your html tag to include the itemscope and itemtype attributes. -->
+    <html itemscope itemtype="http://schema.org/Article">
+
+    <!-- Place this data between the <head> tags of your website -->
     <title>The best resources for learning Web Development, Design, and iOS.</title>
+    <meta name="description" content="Check out this curated list of resources that should help you learn web development, design, or iOS." />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="The best resources for learning Web Development, Design, and iOS.">
+    <meta itemprop="description" content="Check out this curated list of resources that should help you learn web development, design, or iOS.">
+    <meta itemprop="image" content="http://ddres.uvarovis.com/img/preview.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@uvarovdd">
+    <meta name="twitter:title" content="The best resources for learning Web Development, Design, and iOS.">
+    <meta name="twitter:description" content="Check out this curated list of resources that should help you learn web development, design, or iOS.">
+    <meta name="twitter:creator" content="@uvarovdd">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="http://ddres.uvarovis.com/img/preview.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="The best resources for learning Web Development, Design, and iOS." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://ddres.uvarovis.com" />
+    <meta property="og:image" content="http://ddres.uvarovis.com/img/preview.png" />
+    <meta property="og:description" content="Check out this curated list of resources that should help you learn web development, design, or iOS." />
+    <meta property="og:site_name" content="Ivan Uvarov" />
+    <meta property="fb:admins" content="100004034443574" />
+
+
+
     <link rel="stylesheet" href="css/app.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-    
     <script type="text/javascript" src="js/data.js"></script>
-
     <link rel="stylesheet" href="css/animate.css">
     <script src="js/wow.js"></script>
     <script>
       new WOW().init();
     </script>
-
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56523440-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 
   </head>
   <body id="website-body" ng-controller="ResourcesController as resources">
@@ -25,7 +67,7 @@
       <div class="row">
         <div class="columns small-12 medium-8 small-centered">
           <h1 class="animated fadeInUpBig">{{ resources.generalInfo.header_title }}</h1>
-          <h4 class="animated fadeInUpBig">by <a class="white-underline-hover" href="{{ resources.generalInfo.twitter_link }}">Ivan Uvarov</a></h4>
+          <h4 class="animated fadeInUpBig">by <a class="white-underline-hover" href="{{ resources.generalInfo.twitter_link }}" target="_blank">Ivan Uvarov</a></h4>
         </div>
       </div>
 
@@ -218,7 +260,7 @@
 
       <div class="row">
         <div class="columns small-12">
-          <h4 class="text-center">Created and curated by <a class="white-underline-hover" href="{{ resources.generalInfo.twitter_link }}">Ivan Uvarov</a>, <a class="white-underline-hover" href="mailto:tonk2012@gmail.com">Email</a></h4>
+          <h4 class="text-center">Created and curated by <a class="white-underline-hover" href="{{ resources.generalInfo.twitter_link }}" target="_blank">Ivan Uvarov</a>, <a class="white-underline-hover" href="mailto:tonk2012@gmail.com">Email</a></h4>
         </div>
       </div>
     </footer>
